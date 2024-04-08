@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/b3b83db5db.js" crossorigin="anonymous"></script>
+    <title>Tell</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="profile__image" src="./imgs/perfilImage1.png" alt="Imagem de Perfil" title="Imagem de Perfil">
+        </div>
+
+        <div>
+            <img src="./imgs/logo.png" alt="">  
+        </div>
+        <div>
+            <a class="config" href="#">
+                <i class="fa-solid fa-gear"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+
+            <div class="input__card">
+                <div class="input__body">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="tell something..."></textarea>
+                </div>
+                <div class="input__footer">
+                    <button class="clip__button">
+                        <i class="fa-solid fa-paperclip"></i>
+                    </button>
+                    <button class="send__button" type="submit">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <section class="outros__cards">
+
+            <div class="card">
+                <div class="card__header">
+                    <img class="profile__image" src="/imgs/perfilImage2.png" alt="">
+                    <h3>Yuna Tanaka</h3>
+                </div>
+                <div class="card__body">
+                    <p>
+                        Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! 
+                    </p>
+                </div>
+                <div class="card__footer">
+                    <a class="card__button" href="">
+                        <i class="fa-solid fa-share"></i>
+                    </a>
+                    <a class="card__button">
+                        <i onclick="curtir()" id="coracao" class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function curtir() {
+            const coracao = document.getElementById('coracao')
+            const preenchimento = 'fa-solid'
+
+            if(coracao.classList.contains(preenchimento)) {
+                coracao.classList.remove(preenchimento)
+            } else {
+                coracao.classList.add(preenchimento)
+            }
+            
+        }
+    </script>
+</body>
+</html>

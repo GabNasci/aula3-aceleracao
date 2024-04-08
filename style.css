@@ -1,0 +1,20 @@
+@import url('/styles/reset.css');
+@import url('/styles/header.css');
+@import url('/styles/main.css');
+
+:root {
+    --azul: #2D79C7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --cinza-claro: #D9D9D9;
+    --cinza-escuro: #ACACAC;
+    --fonte-principal: 'Inter';
+}
+
+body {
+    height: 100vh;
+    font-family: var(--fonte-principal);
+}
+
+
+

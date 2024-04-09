@@ -61,7 +61,34 @@
                         <i class="fa-solid fa-share"></i>
                     </a>
                     <a class="card__button">
-                        <i onclick="curtir()" id="coracao" class="fa-regular fa-heart"></i>
+                        <i onclick="curtir('coracao')" id="coracao" class="fa-regular fa-heart"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__header">
+                    <img class="profile__image" src="/imgs/perfilImage3.png" alt="">
+                    <h3>Haruto Watanabe</h3>
+                </div>
+                <div class="card__body">
+                    <p>
+                        Eiiitaaa Mainhaaa!! 
+                    </p>
+                    <div class="imagem1">
+                        <img src="/imgs/praia.png" alt="Praia">
+                    </div>
+                    <div class="imagem2">
+                        <img src="/imgs/praia2.jpg" alt="Praia">
+                    </div>
+
+                </div>
+                <div class="card__footer">
+                    <a class="card__button" href="">
+                        <i class="fa-solid fa-share"></i>
+                    </a>
+                    <a class="card__button">
+                        <i onclick="curtir('coracao2')" id="coracao2" class="fa-regular fa-heart"></i>
                     </a>
                 </div>
             </div>
@@ -70,11 +97,37 @@
 
     </main>
     <footer>
-
+        <section class="infos">
+            <div>
+                <h3>Contatos</h3>
+                <ul>
+                    <li>support@tell.com</li>
+                    <li>+ 55 0800 660 235</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Sobre</h3>
+                <ul>
+                    <li>Politica e Privacidade</li>
+                    <li>Termos de Uso</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Parceiros</h3>
+                <ul>
+                    <li>logonoticias.com</li>
+                    <li>varvarejo.com</li>
+                </ul>
+            </div>
+        </section>
+            
+        <section class="creditos">
+            <p>Desenvolvidor por <br> Gabriel &copy;</p>
+        </section>
     </footer>
     <script>
-        function curtir() {
-            const coracao = document.getElementById('coracao')
+        function curtir(id) {
+            const coracao = document.getElementById(id)
             const preenchimento = 'fa-solid'
 
             if(coracao.classList.contains(preenchimento)) {
@@ -82,6 +135,8 @@
             } else {
                 coracao.classList.add(preenchimento)
             }
+
+            
             
         }
     </script>
